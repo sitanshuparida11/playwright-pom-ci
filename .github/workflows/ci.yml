@@ -1,5 +1,6 @@
 name: CI
 
+
 on:
   push:
     branches: [ main ]
@@ -18,3 +19,5 @@ jobs:
       - run: npm ci
       - run: npx playwright install --with-deps
       - run: npm test
+      - run: npm install
+
