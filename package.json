@@ -1,0 +1,16 @@
+{
+  "name": "pom-playwright",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.2.0",
+    "@playwright/test": "^1.57.0",
+    "@types/faker": "^6.6.8",
+    "@types/node": "^25.0.8"
+  }
+}
