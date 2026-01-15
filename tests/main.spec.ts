@@ -6,7 +6,7 @@ import { faker } from '@faker-js/faker'
 test('Register  Account', async ({ page }) => {
   const password = faker.internet.password({ length: 8 });
   const registerAccount = new RegisterAccount(page);
-  let username;
+  let username: string = '';
   let registrationSuccess = false;
   for (let attempt = 0; attempt < 5; attempt++) {
     username = 'user_' + Date.now() + '_' + Math.floor(Math.random() * 1000000);

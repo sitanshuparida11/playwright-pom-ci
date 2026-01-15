@@ -2,6 +2,7 @@
 import { Locator, Page, expect } from "@playwright/test";
 import { faker } from '@faker-js/faker';
 
+
 export class RegisterAccount{
     readonly page:Page;
     readonly firstName:Locator;
